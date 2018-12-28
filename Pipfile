@@ -16,6 +16,7 @@ gunicorn = "*"
 raven = "*"
 sentry-sdk = "*"
 ipython = "*"
+tablib = "*"
 
 [requires]
 python_version = "3.7"

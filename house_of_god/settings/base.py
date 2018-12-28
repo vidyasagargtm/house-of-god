@@ -54,6 +54,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'django_filters',
+
+    'house_of_god.assignment.apps.AssignmentConfig'
 ]
 
 MIDDLEWARE = [
@@ -134,11 +136,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATIC_ROOT = str(ROOT_DIR('staticfiles'))
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+ADMIN_URL = 'admin/'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',
                                 'rest_framework.filters.OrderingFilter'),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 50,
+    'PAGE_SIZE': 10,
 }
