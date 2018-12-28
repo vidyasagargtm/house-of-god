@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 
-from house_of_god.assignment.views import PostList
+from house_of_god.assignment.api import PostList
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
