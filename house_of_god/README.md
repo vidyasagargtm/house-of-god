@@ -1,4 +1,4 @@
 
 # House of God Assignment
 
-# Python, Django, DRF, Postgres
+* Python, Django, DRF
