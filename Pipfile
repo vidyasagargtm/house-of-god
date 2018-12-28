@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+django = "*"
+django-environ = "*"
+"psycopg2-binary" = "*"
+djangorestframework = "*"
+django-filter = "*"
+markdown = "*"
+gunicorn = "*"
+raven = "*"
+sentry-sdk = "*"
+ipython = "*"
+
+[requires]
+python_version = "3.7"
